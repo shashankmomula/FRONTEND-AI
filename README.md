@@ -144,7 +144,7 @@ npm install
 
 
 
-[Home](screenshots/frontend-ai-1.png)
+![Home](screenshots/frontend-ai-1.png)
 
 
 
