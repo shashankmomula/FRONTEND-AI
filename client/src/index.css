@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe 0%, #fce7f3 100%);
+}
+
+.glass {
+  @apply bg-glass dark:bg-glassDark backdrop-blur-xs shadow-glass border border-white/20 dark:border-slate-700/40;
+}
+
+.card {
+  @apply rounded-2xl p-6 shadow-xl glass transition-all duration-300 ease-in-out;
+}
+
+.card:hover {
+  @apply scale-[1.02] shadow-2xl;
+}
+
+.btn-primary {
+  @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-2 rounded-xl shadow transition-all duration-200;
+}
+
+.btn-accent {
+  @apply bg-accent-400 hover:bg-accent-300 text-white font-semibold px-6 py-2 rounded-xl shadow transition-all duration-200;
+}
+
+.spinner {
+  border: 4px solid #e0e7ef;
+  border-top: 4px solid #0ea5e9;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom styles */
+.react-flow__node {
+  @apply shadow-lg;
+}
+
+.react-flow__node:hover {
+  @apply shadow-xl;
+}
+
+.react-flow__edge-path {
+  @apply stroke-primary-500;
+}
+
+.react-flow__controls {
+  @apply shadow-lg rounded-lg overflow-hidden;
+}
+
+.react-flow__controls-button {
+  @apply border-gray-200 dark:border-gray-700;
+}
+
+.react-flow__minimap {
+  @apply shadow-lg rounded-lg overflow-hidden;
+}
+
+/* Dark mode overrides */
+.dark .react-flow__node {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.dark .react-flow__controls {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.dark .react-flow__controls-button {
+  @apply bg-gray-800 text-gray-200 border-gray-700;
+}
+
+.dark .react-flow__minimap {
+  @apply bg-gray-800;
+} 
