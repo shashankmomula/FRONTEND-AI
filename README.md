@@ -9,7 +9,6 @@ An interactive full-stack application built for a hackathon that **explains and 
 - [Demo](#-demo)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
 - [Environment Variables](#-environment-variables)
 - [Deployment](#-deployment)
@@ -53,25 +52,6 @@ An interactive full-stack application built for a hackathon that **explains and 
 
 ---
 
-## 🗂 Project Structure
-
-AI-HACKATHON/
-│
-├── client/ # React Frontend
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── utils/
-│ │ └── App.js
-│ └── package.json
-│
-├── server/ # Express Backend
-│ ├── app.js
-│ └── package.json
-│
-├── .env
-└── README.md
-
 
 ---
 
@@ -82,7 +62,7 @@ AI-HACKATHON/
 ```bash
 https://github.com/shashankmomula/FRONTEND-AI.git
 cd FRONTEND-AI
-
+```bash
 
 ---
 
