@@ -20,8 +20,8 @@ An interactive full-stack application built for a hackathon that **explains and 
 
 ## 🌐 Demo
 
-**Frontend Live**: [https://frontend-ai-kut6.netlify.app](https://frontend-ai-kut6.netlify.app)  
-**Backend Live**: [https://frontend-ai-kut6.onrender.com](https://frontend-ai-kut6.onrender.com)
+**Live Applicaction**: [https://frontend-ai.netlify.app](https://frontend-ai.netlify.app/)
+
 
 ---
 
@@ -29,9 +29,8 @@ An interactive full-stack application built for a hackathon that **explains and 
 
 - 🧠 AI-Powered Code Explanation
 - 🔎 Step-by-Step Code Execution
-- 🌲 Tree and Array Visualizations (2D & 3D)
 - 📊 Interactive UI with clear animations
-- 🌐 Full-stack Architecture (React + Express)
+- 🌐 Full-stack Architecture (React + Express + Node)
 - ⚙️ Environment-safe, deployable & scalable
 
 ---
@@ -42,7 +41,6 @@ An interactive full-stack application built for a hackathon that **explains and 
 - React.js
 - TailwindCSS
 - Axios
-- React Three Fiber & Drei
 
 **Backend**
 - Node.js
@@ -82,5 +80,82 @@ AI-HACKATHON/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ai-code-visualizer.git
-cd ai-code-visualizer
+https://github.com/shashankmomula/FRONTEND-AI.git
+cd FRONTEND-AI
+
+
+---
+
+## 🛠️ Installation
+
+### Backend
+
+```bash
+cd server
+npm install
+
+### Frontend
+
+```bash
+cd client
+npm install
+
+# 🚀 Deployment
+
+## 🖥 Backend (Render)
+
+1. Go to [Render](https://render.com)
+2. Create a new **Web Service**
+3. Set the following:
+
+   - **Root Directory**: `server`
+   - **Build Command**: `npm install`
+   - **Start Command**: `node app.js`
+   - **Environment Variables**:  
+     ```env
+     PORT=5000
+     OPENAI_API_KEY=your_openai_key
+     ```
+
+4. Deploy and wait for it to go live.  
+   Example Backend URL: `https://your-backend.onrender.com`
+
+---
+
+## 🌐 Frontend (Netlify)
+
+1. Push your code to GitHub
+2. Go to [Netlify](https://netlify.com)
+3. Create a new site from Git
+4. Set the following:
+
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `client/build`
+
+5. Deploy and get the live site URL.  
+   Example Frontend URL: `https://your-frontend.netlify.app`
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+![Home Page](link-to-homepage-screenshot)
+
+
+
+---
+
+# 👥 Contributors
+
+- **M. Shashank**  
+  [GitHub](https://github.com/shashankmomula)  
+  [LinkedIn](https://www.linkedin.com/in/momula-shashank-92a2a925a/)
+
+- **Hackathon Team Members**
+  - M. SHASHANK 
+  
+
+---
+
