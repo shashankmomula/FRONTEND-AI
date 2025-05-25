@@ -144,7 +144,7 @@ npm install
 
 
 
-[](link-to-homepage-screenshot)
+[](FRONTEND-AI/screenshots/frontend-ai)
 
 
 
