@@ -2,6 +2,7 @@
 # 🚀 AI Code Explainer & Visualizer
 
 Created a full-stack code explanation and visualization application using **OpenAI**. Through an integrated code editor, users can enter code in **multiple languages** with automatic library imports. The app **explains and visualizes** the code to help users understand it clearly and effectively.
+
 ---
 
 ## 📌 Table of Contents
