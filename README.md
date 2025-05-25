@@ -1,32 +1,164 @@
-# Code Explainer + Visualizer
 
-A modern web application that analyzes code snippets and provides step-by-step explanations and visualizations using OpenAI's API. Built with the MERN stack and featuring a sleek UI with Tailwind CSS.
+# 🚀 AI Code Explainer & Visualizer
 
-## Features
+An interactive full-stack application built for a hackathon that **explains and visualizes code logic**, especially focusing on **data structures like arrays and trees**. Features step-by-step visualizations and code explanations using **AI** and **3D rendering** tools.
 
-- **Multi-language Support:** Write code in 10+ programming languages.
-- **Smart Code Analysis:** Get detailed, beginner-friendly explanations of your code.
-- **Visual Flow Diagrams:** Visualize your code's logic flow with diagrams.
-- **Modern UI/UX:** Beautiful interface with dark and light modes.
-- **Real-time Feedback:** Instant analysis and visualization results.
+---
 
-## Tech Stack
+## 📌 Table of Contents
 
-- **Frontend:** React, Tailwind CSS, Monaco Editor, ReactFlow
-- **Backend:** Node.js, Express
-- **AI:** OpenAI GPT-4
-- **Styling:** Tailwind CSS, Glassmorphism design elements
+- [Demo](#-demo)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
+- [Deployment](#-deployment)
+- [Screenshots](#-screenshots)
+- [Contributors](#-contributors)
 
-## Prerequisites
+---
 
-- Node.js (v14 or higher)
-- npm or yarn
-- OpenAI API key
+## 🌐 Demo
 
-## Installation
+**Live Applicaction**: [https://frontend-ai.netlify.app](https://frontend-ai.netlify.app/)
 
-1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/code-explainer-visualizer.git
-   cd code-explainer-visualizer
+---
+
+## ✨ Features
+
+- 🧠 AI-Powered Code Explanation
+- 🔎 Step-by-Step Code Execution
+- 📊 Interactive UI with clear animations
+- 🌐 Full-stack Architecture (React + Express + Node)
+- ⚙️ Environment-safe, deployable & scalable
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- React.js
+- TailwindCSS
+- Axios
+
+**Backend**
+- Node.js
+- Express.js
+- OpenAI API
+
+**Deployment**
+- Render (Backend)
+- Netlify (Frontend)
+
+---
+
+## 🗂 Project Structure
+
+AI-HACKATHON/
+│
+├── client/ # React Frontend
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── utils/
+│ │ └── App.js
+│ └── package.json
+│
+├── server/ # Express Backend
+│ ├── app.js
+│ └── package.json
+│
+├── .env
+└── README.md
+
+
+---
+
+## 🧩 Getting Started
+
+### 1. Clone the repository
+
+```bash
+https://github.com/shashankmomula/FRONTEND-AI.git
+cd FRONTEND-AI
+```
+
+---
+
+## 🛠️ Installation
+
+### Backend
+
+```bash
+cd server
+npm install
+```
+
+### Frontend
+
+```bash
+cd client
+npm install
+```
+
+# 🚀 Deployment
+
+## 🖥 Backend (Render)
+
+1. Go to [Render](https://render.com)
+2. Create a new **Web Service**
+3. Set the following:
+
+   - **Root Directory**: `server`
+   - **Build Command**: `npm install`
+   - **Start Command**: `node app.js`
+   - **Environment Variables**:  
+     ```env
+     PORT=5000
+     OPENAI_API_KEY=your_openai_key
+     ```
+
+4. Deploy and wait for it to go live.  
+   Example Backend URL: `https://your-backend.onrender.com`
+
+---
+
+## 🌐 Frontend (Netlify)
+
+1. Push your code to GitHub
+2. Go to [Netlify](https://netlify.com)
+3. Create a new site from Git
+4. Set the following:
+
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `client/build`
+
+5. Deploy and get the live site URL.  
+   Example Frontend URL: `https://your-frontend.netlify.app`
+
+---
+
+# 📸 Screenshots
+
+
+
+[](link-to-homepage-screenshot)
+
+
+
+---
+
+# 👥 Contributors
+
+- **M. Shashank**  
+  [GitHub](https://github.com/shashankmomula)  
+  [LinkedIn](https://www.linkedin.com/in/momula-shashank-92a2a925a/)
+
+- **Hackathon Team Members**
+  - M. SHASHANK 
+  
+
+---
+
