@@ -1,3 +1,4 @@
+
 # 🚀 AI Code Explainer & Visualizer
 
 An interactive full-stack application built for a hackathon that **explains and visualizes code logic**, especially focusing on **data structures like arrays and trees**. Features step-by-step visualizations and code explanations using **AI** and **3D rendering** tools.
@@ -9,6 +10,7 @@ An interactive full-stack application built for a hackathon that **explains and 
 - [Demo](#-demo)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
 - [Environment Variables](#-environment-variables)
 - [Deployment](#-deployment)
@@ -52,6 +54,25 @@ An interactive full-stack application built for a hackathon that **explains and 
 
 ---
 
+## 🗂 Project Structure
+
+AI-HACKATHON/
+│
+├── client/ # React Frontend
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── utils/
+│ │ └── App.js
+│ └── package.json
+│
+├── server/ # Express Backend
+│ ├── app.js
+│ └── package.json
+│
+├── .env
+└── README.md
+
 
 ---
 
@@ -62,7 +83,7 @@ An interactive full-stack application built for a hackathon that **explains and 
 ```bash
 https://github.com/shashankmomula/FRONTEND-AI.git
 cd FRONTEND-AI
-```bash
+```
 
 ---
 
@@ -73,12 +94,14 @@ cd FRONTEND-AI
 ```bash
 cd server
 npm install
+```
 
 ### Frontend
 
 ```bash
 cd client
 npm install
+```
 
 # 🚀 Deployment
 
@@ -119,9 +142,9 @@ npm install
 
 # 📸 Screenshots
 
-## 🏠 Home Page
 
-![Home Page](link-to-homepage-screenshot)
+
+[](link-to-homepage-screenshot)
 
 
 
