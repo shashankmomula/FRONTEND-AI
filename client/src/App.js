@@ -53,6 +53,7 @@ function App() {
         },
         body: JSON.stringify({ code, language }),
       });
+      
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -66,7 +67,7 @@ function App() {
       }
 
       setExplanation(data.explanation);
-      setVisualization(data);
+      setVisualization(data.visualization);
     } catch (error) {
       console.error('Error in handleExplainAndVisualize:', error);
       setError(error.message || ERROR_MESSAGES.API_ERROR);
@@ -92,23 +93,24 @@ function App() {
           </button>
         </header>
 
-        <main className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="space-y-8">
-            <div className="card">
-              <CodeEditor onExplain={handleExplainAndVisualize} loading={loading} />
-            </div>
-            <div className="card">
-              <ExplanationPanel explanation={explanation} loading={loading} />
-            </div>
-          </div>
-          <div className="card lg:col-span-1">
-            <VisualizationPanel 
-              visualization={visualization} 
-              loading={loading} 
-              error={error}
-            />
-          </div>
-        </main>
+        <main className="w-full max-w-6xl grid gap-8 lg:grid-cols-2">
+  <div className="flex flex-col gap-8">
+    <div className="card">
+      <CodeEditor onExplain={handleExplainAndVisualize} loading={loading} />
+    </div>
+    <div className="card">
+      <ExplanationPanel explanation={explanation} loading={loading} />
+    </div>
+  </div>
+  <div className="card">
+    <VisualizationPanel 
+      visualization={visualization} 
+      loading={loading} 
+      error={error}
+    />
+  </div>
+</main>
+
         {error && (
           <div className="mt-4 p-4 bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-200 rounded-lg shadow-lg">
             {error}

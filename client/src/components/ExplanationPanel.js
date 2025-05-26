@@ -39,35 +39,42 @@ const ExplanationPanel = ({ explanation, loading }) => {
       <div className="space-y-4">
         {explanation.map((step, index) => (
           <div
-            key={index}
-            className={`glass border-l-4 transition-all duration-300 ${expandedSteps[index] ? 'border-primary-400' : 'border-primary-100 dark:border-primary-700'}`}
-          >
-            <button
-              onClick={() => toggleStep(index)}
-              className="w-full flex justify-between items-center py-3 px-4 focus:outline-none"
-            >
-              <span className="font-medium text-primary-700 dark:text-primary-200">
-                Step {index + 1}: {step.t}
-              </span>
-              {expandedSteps[index] ? (
-                <FiChevronUp className="text-primary-400" />
-              ) : (
-                <FiChevronDown className="text-primary-400" />
-              )}
-            </button>
-            <div
-              className={`overflow-hidden transition-all duration-300 ${expandedSteps[index] ? 'max-h-40 py-2 px-4' : 'max-h-0 py-0 px-4'}`}
-            >
-              <p className="text-gray-700 dark:text-gray-200 text-base animate-fade-in">
-                {step.d}
-              </p>
-              {step.code && (
-                <pre className="mt-2 p-2 bg-gray-50 dark:bg-gray-900 rounded text-sm overflow-x-auto">
-                  <code>{step.code}</code>
-                </pre>
-              )}
-            </div>
-          </div>
+  key={index}
+  className={`glass border-l-4 transition-all duration-300 ${expandedSteps[index] ? 'border-primary-400' : 'border-primary-100 dark:border-primary-700'}`}
+>
+  <button
+    onClick={() => toggleStep(index)}
+    className="w-full flex justify-between items-center py-3 px-4 focus:outline-none"
+    aria-expanded={expandedSteps[index]}
+    aria-controls={`step-content-${index}`}
+  >
+    <span className="font-medium text-primary-700 dark:text-primary-200 text-left">
+      Step {index + 1}: {step.t}
+    </span>
+    {expandedSteps[index] ? (
+      <FiChevronUp className="text-primary-400" />
+    ) : (
+      <FiChevronDown className="text-primary-400" />
+    )}
+  </button>
+
+  <div
+    id={`step-content-${index}`}
+    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+      expandedSteps[index] ? 'max-h-[500px] py-2 px-4' : 'max-h-0 py-0 px-4'
+    }`}
+  >
+    <p className="text-gray-700 dark:text-gray-200 text-base animate-fade-in">
+      {step.d}
+    </p>
+    {step.code && (
+      <pre className="mt-2 p-3 bg-gray-100 dark:bg-gray-900 rounded-lg text-sm overflow-x-auto">
+        <code>{step.code}</code>
+      </pre>
+    )}
+  </div>
+</div>
+
         ))}
       </div>
     </div>
