@@ -1,7 +1,7 @@
 
 # 🚀 AI Code Explainer & Visualizer
 
-An interactive full-stack application built for a hackathon that **explains and visualizes code logic**, especially focusing on **data structures like arrays and trees**. Features step-by-step visualizations and code explanations using **AI** and **3D rendering** tools.
+Created a full-stack code explanation and visualization application using **OpenAI**. Through an integrated code editor, users can enter code in **multiple languages** with automatic library imports. The app **explains and visualizes** the code to help users understand it clearly and effectively.
 
 ---
 
@@ -143,8 +143,10 @@ npm install
 # 📸 Screenshots
 
 
-
-[](link-to-homepage-screenshot)
+![Home](screenshots/frontend-ai.png)
+![Home](screenshots/frontend-ai-1.png)
+![Multi-Languange](screenshots/frontend-ai-2.png)
+![Explanation](screenshots/frontend-ai-3.png)
 
 
 
