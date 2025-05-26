@@ -5,11 +5,11 @@
 
 body {
   font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  background: linear-gradient(135deg, #e0f2fe 0%, #fce7f3 100%);
+  @apply bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
 }
 
 .glass {
-  @apply bg-glass dark:bg-glassDark backdrop-blur-xs shadow-glass border border-white/20 dark:border-slate-700/40;
+  @apply bg-glass backdrop-blur-xs shadow-glass border border-white/20 dark:bg-glassDark dark:border-slate-700/40;
 }
 
 .card {
@@ -43,9 +43,9 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-/* Custom styles */
+/* React Flow styles */
 .react-flow__node {
-  @apply shadow-lg;
+  @apply shadow-lg bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700;
 }
 
 .react-flow__node:hover {
@@ -57,15 +57,57 @@ body {
 }
 
 .react-flow__controls {
-  @apply shadow-lg rounded-lg overflow-hidden;
+  @apply shadow-lg rounded-lg overflow-hidden bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700;
 }
 
 .react-flow__controls-button {
-  @apply border-gray-200 dark:border-gray-700;
+  @apply bg-white text-gray-800 border-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700;
 }
 
 .react-flow__minimap {
-  @apply shadow-lg rounded-lg overflow-hidden;
+  @apply shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-800;
+}
+
+/* Custom styles */
+.react-flow__node {
+  @apply shadow-lg bg-gray-800 border-gray-700;
+}
+
+.react-flow__node:hover {
+  @apply shadow-xl;
+}
+
+.react-flow__edge-path {
+  @apply stroke-primary-500;
+}
+
+.react-flow__controls {
+  @apply shadow-lg rounded-lg overflow-hidden bg-gray-800 border-gray-700;
+}
+
+.react-flow__controls-button {
+  @apply bg-gray-800 text-gray-200 border-gray-700;
+}
+
+.react-flow__minimap {
+  @apply shadow-lg rounded-lg overflow-hidden bg-gray-800;
+}
+
+/* Light mode overrides */
+:root:not(.dark) .react-flow__node {
+  @apply bg-white border-gray-200;
+}
+
+:root:not(.dark) .react-flow__controls {
+  @apply bg-white border-gray-200;
+}
+
+:root:not(.dark) .react-flow__controls-button {
+  @apply bg-white text-gray-800 border-gray-200;
+}
+
+:root:not(.dark) .react-flow__minimap {
+  @apply bg-white;
 }
 
 /* Dark mode overrides */

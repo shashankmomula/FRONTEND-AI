@@ -48,20 +48,20 @@ const CodeEditor = ({ onExplain, loading }) => {
           </div>
           <button
             onClick={handleInsertImports}
-            className="btn-accent flex items-center gap-2 m-2"
+            className="btn-accent flex items-center gap-2 mr-3"
             title="Insert common imports"
           >
-            <FiPackage className="text-lg" />
+            <FiPackage className="text-3xl" />
             Insert Imports
           </button>
         </div>
         <button
           onClick={handleExplain}
           disabled={loading}
-          className={`btn-primary flex items-center gap-2 ${loading ? 'opacity-60 cursor-not-allowed' : ''}`}
+          className={`btn-primary flex items-center gap-2 mr-3 ${loading ? 'opacity-60 cursor-not-allowed' : ''}`}
         >
-          <FiPlay className="text-lg" />
-          {loading ? 'Processing...' : 'Explain & Visualize'}
+          <FiPlay className="text-3xl" />
+          {loading ? 'Processing..' : 'Explain & Visualize'}
         </button>
       </div>
       <div className="rounded-xl overflow-hidden border border-primary-100 dark:border-primary-600 shadow glass">

@@ -4,12 +4,7 @@ export const SUPPORTED_LANGUAGES = [
   { id: 'python', name: 'Python' },
   { id: 'java', name: 'Java' },
   { id: 'cpp', name: 'C++' },
-  { id: 'csharp', name: 'C#' },
-  { id: 'php', name: 'PHP' },
-  { id: 'ruby', name: 'Ruby' },
-  { id: 'swift', name: 'Swift' },
-  { id: 'go', name: 'Go' },
-  { id: 'rust', name: 'Rust' },
+
 ];
 
 // Default code templates for each language
@@ -18,12 +13,7 @@ export const DEFAULT_CODE = {
   python: '# Write your Python code here...',
   java: '// Write your Java code here...',
   cpp: '// Write your C++ code here...',
-  csharp: '// Write your C# code here...',
-  php: '<?php\n// Write your PHP code here...',
-  ruby: '# Write your Ruby code here...',
-  swift: '// Write your Swift code here...',
-  go: '// Write your Go code here...',
-  rust: '// Write your Rust code here...',
+
 };
 
 // Common imports for each language
@@ -55,56 +45,7 @@ import java.time.*;
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <map>
-
-// Your code here...`,
-  csharp: `// Common C# using statements
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-// Your code here...`,
-  php: `<?php
-// Common PHP includes
-require_once 'vendor/autoload.php';
-use GuzzleHttp\Client;
-use Carbon\Carbon;
-
-// Your code here...`,
-  ruby: `# Common Ruby requires
-require 'net/http'
-require 'json'
-require 'date'
-require 'active_support/all'
-
-# Your code here...`,
-  swift: `// Common Swift imports
-import Foundation
-import UIKit
-import SwiftUI
-import Combine
-
-// Your code here...`,
-  go: `// Common Go imports
-package main
-
-import (
-    "fmt"
-    "net/http"
-    "encoding/json"
-    "time"
-)
-
-// Your code here...`,
-  rust: `// Common Rust imports
-use std::collections::HashMap;
-use std::fs::File;
-use std::io::{self, Write};
-use serde::{Serialize, Deserialize};
-
-// Your code here...`,
+#include <map>`,
 };
 
 // Editor configuration options
